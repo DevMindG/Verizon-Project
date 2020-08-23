@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.dev.verizon.util.AppConstants"/>
+      <class name="com.dev.verizon.tests.CartPageTest"/>
+      <class name="com.dev.verizon.tests.PhonePageTest"/>
+      <class name="com.dev.verizon.tests.SmartphonePageTest"/>
+      <class name="com.dev.verizon.page.SmartphonePage"/>
+      <class name="com.dev.verizon.page.CartPage"/>
+      <class name="com.dev.verizon.util.JavaScriptUtil"/>
+      <class name="com.dev.verizon.util.ElementUtil"/>
+      <class name="com.dev.verizon.util.Constants"/>
+      <class name="com.dev.verizon.page.PhonePage"/>
+      <class name="com.dev.verizon.tests.HomePageTest"/>
+      <class name="com.dev.verizon.page.HomePage"/>
+      <class name="com.dev.verizon.base.BasePage"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.dev.verizon.tests.HomePageTest">
+        <methods>
+          <include name="verifyHomePageTitle"/>
+          <include name="hoverPhones"/>
+          <include name="phonesClick"/>
+        </methods>
+      </class> <!-- com.dev.verizon.tests.HomePageTest -->
+      <class name="com.dev.verizon.tests.SmartphonePageTest">
+        <methods>
+          <include name="choosePhoneTest"/>
+          <include name="verifyHomePageTitle"/>
+        </methods>
+      </class> <!-- com.dev.verizon.tests.SmartphonePageTest -->
+      <class name="com.dev.verizon.tests.PhonePageTest">
+        <methods>
+          <include name="verifyTitle"/>
+          <include name="hoverPhones"/>
+        </methods>
+      </class> <!-- com.dev.verizon.tests.PhonePageTest -->
+      <class name="com.dev.verizon.tests.CartPageTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.dev.verizon.tests.CartPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
